@@ -1,0 +1,41 @@
+{
+  "name": "cors-helpers",
+  "type": "module",
+  "version": "0.0.1",
+  "description": "A helper for creating a CORS middleware. Using with Request interface of the Fetch API represents a resource request. Response interface of the Fetch API represents a resource response.",
+  "author": "Akawahuy <akawahuynh3006@gmail.com>",
+  "license": "MIT",
+  "homepage": "https://github.com/akawahuynh/cors-helpers#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/akawahuynh/cors-helpers.git"
+  },
+  "bugs": {
+    "url": "https://github.com/akawahuynh/cors-helpers/issues"
+  },
+  "exports": {
+    ".": "./dist/index.mjs",
+    "./package.json": "./package.json"
+  },
+  "types": "./dist/index.d.mts",
+  "files": [
+    "dist"
+  ],
+  "private": false,
+  "devDependencies": {
+    "@types/bun": "latest",
+    "bumpp": "^10.4.0",
+    "tsdown": "^0.20.0-beta.4",
+    "vitest": "^4.0.17"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "scripts": {
+    "build": "tsdown",
+    "dev": "tsdown --watch",
+    "test": "vitest",
+    "typecheck": "tsc --noEmit",
+    "prepublishOnly": "bun run build"
+  }
+}
