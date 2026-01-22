@@ -1,7 +1,7 @@
 {
   "name": "cors-helpers",
   "type": "module",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A helper for creating a CORS middleware. Using with Request interface of the Fetch API represents a resource request. Response interface of the Fetch API represents a resource response.",
   "author": "Akawahuy <akawahuynh3006@gmail.com>",
   "license": "MIT",
